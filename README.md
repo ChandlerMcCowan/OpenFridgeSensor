@@ -22,3 +22,6 @@ I want to explore using JSON objects to pass data from the sensor to the display
 
 ## Battery Power
 Both the sensor and the display should be batter powered. Maybe the display can have an IR sensor that detects when a person walks by to keep power consumption down. I expect to use a coincell for the in-fridge sensor, and maybe a 9V battery for the display. These will need some exploration to determine the best solution when the power consumption is calculated. 
+
+## Enclosures
+As usual, I will create some enclosures that can be 3D printed. One thing that might be interesting is to explore using epoxy or conformal coating to increase sensor robustness.
