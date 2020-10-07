@@ -1,4 +1,168 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Switching:TPS61222DCK U?
+U 1 1 5F7E0F37
+P 2925 1725
+F 0 "U?" H 2925 2092 50  0000 C CNN
+F 1 "TPS61222DCK" H 2925 2001 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:Texas_R-PDSO-G6" H 2925 925 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps61220.pdf" H 2925 1575 50  0001 C CNN
+	1    2925 1725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5F7E2084
+P 1050 1625
+F 0 "J?" H 968 1842 50  0000 C CNN
+F 1 "Conn_01x02" H 968 1751 50  0000 C CNN
+F 2 "" H 1050 1625 50  0001 C CNN
+F 3 "~" H 1050 1625 50  0001 C CNN
+	1    1050 1625
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 1725 1425 1725
+Wire Wire Line
+	1425 1725 1425 1850
+$Comp
+L power:GND #PWR?
+U 1 1 5F7E2E91
+P 1425 1850
+F 0 "#PWR?" H 1425 1600 50  0001 C CNN
+F 1 "GND" H 1430 1677 50  0000 C CNN
+F 2 "" H 1425 1850 50  0001 C CNN
+F 3 "" H 1425 1850 50  0001 C CNN
+	1    1425 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5F7E7475
+P 2175 1500
+F 0 "L?" V 2365 1500 50  0000 C CNN
+F 1 "4.7 uH" V 2274 1500 50  0000 C CNN
+F 2 "" H 2175 1500 50  0001 C CNN
+F 3 "~" H 2175 1500 50  0001 C CNN
+	1    2175 1500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2325 1500 2425 1500
+Wire Wire Line
+	2425 1500 2425 1625
+Wire Wire Line
+	2425 1625 2525 1625
+Wire Wire Line
+	1925 1500 1925 1625
+Wire Wire Line
+	1925 1500 2025 1500
+Wire Wire Line
+	1250 1625 1925 1625
+Wire Wire Line
+	1925 1625 1925 1725
+Wire Wire Line
+	1925 1725 2425 1725
+Connection ~ 1925 1625
+Wire Wire Line
+	2525 1825 2425 1825
+Wire Wire Line
+	2425 1825 2425 1725
+Connection ~ 2425 1725
+Wire Wire Line
+	2425 1725 2525 1725
+$Comp
+L Device:C C?
+U 1 1 5F7E9985
+P 1925 1875
+F 0 "C?" H 2040 1921 50  0000 L CNN
+F 1 "10uF" H 2040 1830 50  0000 L CNN
+F 2 "" H 1963 1725 50  0001 C CNN
+F 3 "~" H 1925 1875 50  0001 C CNN
+	1    1925 1875
+	1    0    0    -1  
+$EndComp
+Connection ~ 1925 1725
+$Comp
+L power:GND #PWR?
+U 1 1 5F7EA26E
+P 1925 2125
+F 0 "#PWR?" H 1925 1875 50  0001 C CNN
+F 1 "GND" H 1930 1952 50  0000 C CNN
+F 2 "" H 1925 2125 50  0001 C CNN
+F 3 "" H 1925 2125 50  0001 C CNN
+	1    1925 2125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1925 2025 1925 2125
+$Comp
+L Device:C C?
+U 1 1 5F7EA85F
+P 3575 2025
+F 0 "C?" H 3690 2071 50  0000 L CNN
+F 1 "10uF" H 3690 1980 50  0000 L CNN
+F 2 "" H 3613 1875 50  0001 C CNN
+F 3 "~" H 3575 2025 50  0001 C CNN
+	1    3575 2025
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F7F8FAD
+P 3575 2300
+F 0 "#PWR?" H 3575 2050 50  0001 C CNN
+F 1 "GND" H 3580 2127 50  0000 C CNN
+F 2 "" H 3575 2300 50  0001 C CNN
+F 3 "" H 3575 2300 50  0001 C CNN
+	1    3575 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3575 2175 3575 2300
+Wire Wire Line
+	3325 1625 3425 1625
+Wire Wire Line
+	3425 1625 3425 1725
+Wire Wire Line
+	3325 1825 3425 1825
+Wire Wire Line
+	3425 1725 3575 1725
+Wire Wire Line
+	3575 1725 3575 1875
+Connection ~ 3425 1725
+Wire Wire Line
+	3425 1725 3425 1825
+Text Notes 775  1350 0    50   ~ 0
+0.9 V - 5.5V input
+Text Notes 2200 1125 0    50   ~ 0
+Boost Converter Circuit
+Wire Wire Line
+	3575 1725 3575 1450
+Connection ~ 3575 1725
+$Comp
+L power:+5V #PWR?
+U 1 1 5F7FEFB7
+P 3575 1450
+F 0 "#PWR?" H 3575 1300 50  0001 C CNN
+F 1 "+5V" H 3590 1623 50  0000 C CNN
+F 2 "" H 3575 1450 50  0001 C CNN
+F 3 "" H 3575 1450 50  0001 C CNN
+	1    3575 1450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
