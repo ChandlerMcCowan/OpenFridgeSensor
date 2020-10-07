@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name OpenFridge_Display)(type Legacy)(uri ${KIPRJMOD}/Libraries/OpenFridge_Display.lib)(options "")(descr ""))
+)
