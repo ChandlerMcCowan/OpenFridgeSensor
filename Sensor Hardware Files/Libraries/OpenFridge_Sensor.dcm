@@ -1,5 +1,10 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP AT86RF231-ZU
+D Low Power 2.4 GHz Transceiver for ZigBee, IEEE 802.15.4, 6LoWPAN, RF4CE, SP100, WirelessHART, and ISM Applications
+K Zigbee Transceiver 2.4Ghz Wireless
+$ENDCMP
+#
 $CMP BH1730FVC
 D Digital 16bit Serial Output Type Ambient Light Sensor
 K Ambient Light Sensor
